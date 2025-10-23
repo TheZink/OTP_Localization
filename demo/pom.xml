@@ -40,6 +40,7 @@
     </dependencies>
 
     <build>
+        <finalName>shopping</finalName>
         <plugins>
             <plugin>
                 <groupId>org.jacoco</groupId>
