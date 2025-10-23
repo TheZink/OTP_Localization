@@ -9,4 +9,4 @@ COPY demo/src ./src
 
 RUN mvn package
 
-CMD [ "java", "-jar", "target/localization.jar" ]
+CMD [ "java", "-jar", "target/demo-1.0-SNAPSHOT.jar" ]
