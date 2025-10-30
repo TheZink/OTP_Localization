@@ -7,7 +7,7 @@ pipeline {
         // Define Docker Hub credentials ID
         DOCKERHUB_CREDENTIALS_ID = 'Docker_Hub'
         // Define Docker Hub repository name
-        DOCKERHUB_REPO = 'ilkkasin/otp_localization'
+        DOCKERHUB_REPO = 'ilkkasin/otp_localization_ui'
         // Define Docker image tag
         DOCKER_IMAGE_TAG = 'latest'
     }
@@ -17,7 +17,7 @@ tools{
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url:'https://github.com/TheZink/OTP_localization.git'
+                git branch: 'Gui', url:'https://github.com/TheZink/OTP_localization.git'
             }
         }
         stage('Build') {
