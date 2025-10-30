@@ -58,7 +58,7 @@ public class AppGUI extends Application{
             priceField.setPromptText(rb.getString("prompt.price"));
             quantityField.setPromptText(rb.getString("prompt.quantity"));
             addButton.setText(rb.getString("prompt.add"));
-            totalLabel.setText(rb.getString("total") + ": " + String.format(Locale.getDefault(), "%.2f", totalAmount) + " euro");
+            totalLabel.setText(rb.getString("total") + ": " + String.format("%.2f", totalAmount) + " euro");
             countLabel.setText(rb.getString("items.count") + ": " + itemCount);
         });
 
@@ -100,7 +100,7 @@ public class AppGUI extends Application{
         root.setPadding(new Insets(12));
 
         Scene scene = new Scene(root, 420, 200);
-        stage.setTitle("Shopping Cart");
+        stage.setTitle("Shopping Cart (Ilkka Sinkonen)");
         stage.setScene(scene);
         stage.show();
     }
